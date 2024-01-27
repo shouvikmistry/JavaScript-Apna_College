@@ -26,3 +26,37 @@ const PI =  3.4;
 console.log(PI);
 typeof PI;
 // Objects 
+const student = {
+    fullName: 'Rahul Kumar',
+    age: 20,
+    cgpa: 8.2,
+    isPass: true,
+};
+console.log(student);
+console.log(student.age);
+console.log(student["cgpa"]);
+student.fullName = 'Shouvik Mistry';//Const Object Value can be change but const variable can not changed
+console.log(student.fullName);
+
+//Let's Practice
+// Q1. Create a const object called "product" to store information shown in the picture.
+const product ={
+    title: "Ball pen",
+    rating: 4,
+    offer: 5,
+    price: 270,
+};
+console.log(product);
+
+//Q2. Create a const object called "profile" to store information shown in the picture.
+
+const instagram={
+    userName: "Shradha Khapra",
+    post: 196,
+    folllower: 569000,
+    following: 4,
+    isFollo: true,
+    bio :"Apna College",
+};
+console.log(instagram);
+console.log(typeof instagram.userName);
