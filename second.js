@@ -97,6 +97,48 @@ console.log("a ** b = ",a ** b);
     let result = age > 18 ? "Adult" : "Child";
     console.log(result);
 
-     
+// Practice
+/*
+Q1. Get user to input a number using prompt"Enter a number:"). Check if the number is a multiple of 5 or not.
+*/
+
+
+let num = prompt("Enter a number");
+if (num%5 == 0) {
+    console.log(num, "Number is a multiple of 5");
+} else {
+    console.log(num, "Number is not a multiple of 5");
+}
+
+/*
+Q2. Write a code which can give grades to students according to their scores:
+• 90-100, A
+• 70-89, В
+• 60-69, С
+• 50-59, D
+• 0-49, F
+*/
+let score = prompt("Enter Student Score");
+let grades;
+if (score>=90 && score<=100) {
+    grades = 'A';
+}
+else if (score>=70 && score<=89) {
+    grades = 'B';
+}
+else if (score>=60 && score<=69) {
+    grades = 'C';
+}
+else if (score>=50 && score<=59) {
+    grades = 'D';
+}
+else if (score>=0 && score<=49) {
+    grades = 'F';
+}
+else{
+    grades = 'Eror';
+}
+console.log("According Student Score ",score ,"grade is ",grades);
+
 
 
