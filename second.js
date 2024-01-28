@@ -65,6 +65,38 @@ console.log("a ** b = ",a ** b);
     console.log("Logical NOT");
     console.log("true NOT = ",!true);
     console.log("false NOT = ",!false);
+
+//----------------Conditional Statements ----------------
+ //If Statement
+    let age = 61;
+
+    if (age>18) {
+        console.log("You can Vote");
+    }
+    if (age<18) {
+        console.log("You can not Vote");
+    }
+ //If-Else Statement
+    if (age>18) {
+        console.log("You can Vote");
+    }
+    else {
+        console.log("You can not Vote");
+    }
+ //Else-if Statement
+    if (age>60) {
+        console.log("You Older to Vote");
+    }
+    else if (age>18) {
+        console.log("You can Vote");
+    }
+    else {
+        console.log("You can not Vote");
+    }
+ //  ##### Ternary Opperator #####
+    let result = age > 18 ? "Adult" : "Child";
+    console.log(result);
+
      
 
 
