@@ -46,3 +46,23 @@
         for (let key in student) {
             console.log(key, student[key]);
         }
+/*
+Practice 
+Q1. Print all even numbers from 0 to 100
+
+        for (let i = 1; i <= 100; i++) {
+            if (i%2===0) {
+                console.log("Even Number is ", i);
+            } 
+        }
+
+Q2.Create a game where you start with any random game number. Ask the user to keep guessing the game number until the user enters correct value.
+            let gameNum = 25;
+
+            let userNum = prompt("Gues a game number");
+            while (gameNum != userNum) {
+                userNum = prompt("you Gues wrong a game number, try again");
+                
+            }
+            alert("Congratulations, You entered a game number");
+*/
