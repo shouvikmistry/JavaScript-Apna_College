@@ -66,3 +66,34 @@ Q2.Create a game where you start with any random game number. Ask the user to ke
             }
             alert("Congratulations, You entered a game number");
 */
+
+//******** String ***********
+
+            let str1 = "Hello world!";
+            let str2 = 'Shouvik';
+
+            console.log(str1.length); // string.length tells lenth of how many characters
+            console.log(str1[0]); // string index Charecter position
+
+            //Template literal
+            let specialString =`This is a special string`
+
+            let obj = {
+                item: "pen",
+                Price: 10,
+            };
+            let output = `the cost of ${obj.item} is ${obj.Price} rupees`;
+            console.log(output);
+
+            console.log("the cost of", obj.item, "is", obj.Price, "rupees");
+            // Escape Characters
+            console.log("Hello\nworld"); // \n newline
+            console.log("Hello\tworld"); // \t Tab
+            strEscape ="Hell\nWorld";
+            console.log(strEscape.length); //10
+
+            // String Method
+            let strMethod = "ApnaCollege";
+            let newstr = strMethod.toUpperCase();
+            console.log(strMethod);
+            console.Log(newstr);
