@@ -93,7 +93,47 @@ Q2.Create a game where you start with any random game number. Ask the user to ke
             console.log(strEscape.length); //10
 
             // String Method
-            let strMethod = "ApnaCollege";
-            let newstr = strMethod.toUpperCase();
-            console.log(strMethod);
-            console.Log(newstr);
+            let strM = "Hello World";
+            let strNew = strM.toUpperCase(); // toUpperCase Capitalize string
+            console.log(strM); ///Don't Change Original String
+            console.log(strNew); // Generate new String
+            
+            let strLow = strM.toLowerCase(); // toUpperCase lowercase string
+            console.log(strLow);
+            
+            strM = "   Hello World   "
+            let strTrim = strM.trim(); // remove only Starts and ends Spaces
+            console.log(strTrim);
+            
+            strM = "01234567"
+            let strSlice = strM.slice(1,5); // slice starting with start of string ending with end+1
+            console.log(strSlice); //1234
+            console.log(strM.slice(3)); //34567
+
+            let strA = "Hello";
+            let strB = "World";
+            let res = strA.concat(strB);// Concatenate 2 Strings
+            console.log(res) ;
+            res = "I am learning "+strA+ strB;
+            console.log(res) ;
+
+            let youtube = "HelloWorld";
+            console.log(youtube.replace("HelloWorld", "Youtube")) ; //Replace string 
+
+            let JS = "I Love JS";
+            JS[0]= "S"; // String is immutable only change with replace method or new string
+            console.log(JS) ;
+
+/*
+Let's Practice
+Qs1. Prompt the user to enter their full name. Generate a username for them based on the input.
+Start username with @, followed by their full name and ending with the fullname length.
+eg: user name = "shradhakhapra", username should be "@shradhakhapra13"
+
+    // let user = "Shouvik";
+    let user = prompt("Enter your full name without spaces");
+    let strLength = user.length;
+    let newUser ='@'+user+strLength;
+    console.log(newUser);
+
+*/
