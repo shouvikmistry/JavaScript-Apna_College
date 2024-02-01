@@ -50,3 +50,53 @@ Find the average marks of the entire class.
         prices[i] = prices[i]*90/100;
     }
     console.log(prices);
+
+// Array Methods
+    let arrayMethods = [0, 1, 2, 3, 4, 5]
+    arrayMethods.push(6); // Added value at end of array
+    console.log(arrayMethods);
+    arrayMethods.unshift(-1); // Added value at start of array
+    console.log(arrayMethods);
+
+    arrayMethods.pop(); // deleted value at end of array
+    console.log(arrayMethods);
+    arrayMethods.shift(); // deleted value at start of array
+    console.log(arrayMethods);
+    
+    console.log(arrayMethods.toLocaleString()); // to change array to string but doesnt change original array
+    console.log(arrayMethods);
+
+    let marvelHeroes = ["thor", "spiderman", "ironman"];
+    let dcHeroes = ["superman", "batman"];
+    let indianHeroes = ["shaktiman", "krish"];
+
+    let heroes = marvelHeroes.concat(dcHeroes, indianHeroes);//concat arrays but doesnt change original
+    console. log (heroes);
+    let newHeros = heroes.slice(0,3); // slice(start index, end index(non exclusive)) returns new array but doesn't change original
+    console. log (heroes);
+    console. log (newHeros);
+
+    //Splice method use add,delete and replace splice(start index, Number of delete items , replace value) ### IT WILL CHANGE THE ORIGINAL ARRAY ###
+    let arr = [1, 2, 3, 4, 5, 6, 71];
+    arr.splice(2, 2, 101, 102);
+    console.log(arr);
+
+    //Add Element
+    arr.splice(2, 0, 101);
+    console.log(arr);
+    
+    //Delete Element
+    arr.splice(3, 1);
+    console.log(arr);
+    
+    //Replace Element
+    arr.splice(3, 1, 103);
+    console.log(arr);
+    
+    //Replace Element
+    arr.splice(3, 1, 103);
+    console.log(arr);
+    
+    //cut the array from index
+    arr.splice(4); // [5 , 6 , 71]
+    console.log(arr);// [1, 2, 101, 103]
