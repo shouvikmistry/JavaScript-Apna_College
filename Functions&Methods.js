@@ -54,3 +54,24 @@ let countVow = (str) => {
     console.log(count);
 }
 countVow("Hello world!");
+
+// For each Loop
+    //arr.forEach(callback function)
+    // Higher order function take function parameter or return function
+
+let arr = [1, 2, 3, 4, 5, 6, 7];
+
+arr.forEach(function printValue(value) {// value at each iteration
+    console.log(value);
+});
+
+//Arrow function
+arr.forEach((value) =>{// value at each iteration
+    console.log(value);
+});
+
+arr = ["pune", "delhi", "mumbai"]
+arr.forEach((value, idx, arr) =>{//Three parameters can be passed for each iteration value, index and Array
+    console.log(value.toUpperCase(),idx,arr);
+});
+
