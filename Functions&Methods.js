@@ -134,19 +134,40 @@ Array.forEach((value)=>{console.log(value +" Square Value is "+ value*value);});
     });
     console.log(output2);//1
 
-    
+/*
+Let's Practice
+Qs. We are given array of marks of students. Filter out of the marks of students that scored 90+.
+*/
 
+let marks = [100,98, 100,,70,80,95,93];
+let filterMarks = marks.filter(val => {
+    // return val >= 90 ? val : null;
+    return val >= 90 ;
+});
 
+console.log(filterMarks);
 
+/*
+Qs. Take a number n as input from user. Create an array of numbers from 1 to n.
+Use the reduce method to calculate sum of all numbers in the array.
+Use the reduce method to calculate product of all numbers in the array.
+*/
 
+let n = prompt('Enter size of Array : ');
+let arr2 = [];
+for (let i = 1; i <= n; i++) {
+    //arr2[i] = parseInt(prompt('Enter a number : ')); // parseInt() This parameter contains a string that is converted to an integer. // for custom array
+    arr2[i-1] = i;
 
+}
+console.log(arr2);
+let arrr = [1,2,3,4];
+const output4 = arr2.reduce((prev , curr) =>{
+ return prev + curr;
+});
+console.log("Sum of Element are : ",output4);
 
-
-
-
-
-
-
-
-
-
+const output5 = arr2.reduce((prev , curr) =>{
+ return prev * curr;
+});
+console.log("Product of Element are : ",output5);
