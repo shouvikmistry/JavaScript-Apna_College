@@ -55,7 +55,7 @@ let countVow = (str) => {
 }
 countVow("Hello world!");
 //-------------------------------------- Methods ----------------------------------------
-// For each Loop
+//**For each Loop**
     //arr.forEach(callback function)
     // Higher order function take function parameter or return function
 
@@ -82,3 +82,71 @@ Qs. For given array of numbers , print the square of each value using forEach Lo
 let Array = [1,2,3,4,5,6,7,8];
 
 Array.forEach((value)=>{console.log(value +" Square Value is "+ value*value);});
+
+//**Map Mtehod**
+ //Similar to forEach but its create new array
+
+    let newArr = Array.map((val) => {
+        return val**2;
+    });
+    console.log(newArr);
+    
+//**Filter Method** 
+    //filter even elements
+    let evenArr = Array.filter((val) => {
+        return val%2===0;
+    });
+    console.log(evenArr);
+    //filter odd elements
+    let oddArr = Array.filter((val) => {
+        return val%2!==0;
+    });
+    console.log(oddArr);
+
+// **Reduce Mtehpd**
+    //Reduces the array to single value and returns
+
+    // return sum of array 
+    let arr1 = [1,2,3,4];
+
+    const output = arr1.reduce((acc,  val) =>{
+        //               return sum   next indes
+        return acc    +  val;
+    //step1    arr[0] +  arr[1]   
+    });
+    console.log(output);//10
+
+    // return Largest of array 
+    arr1 = [6,9,1,2,3,4];
+    const output1 = arr1.reduce((acc,  val) =>{
+        //               return largest   next indes
+        return acc > val ? acc        : val;
+    //step1  arr[0]>arr[1] return acc if not retrun val  
+    });
+    console.log(output1);//9
+
+    // return smallest of array 
+    arr1 = [6,9,1,2,3,4];
+    const output2 = arr1.reduce((acc,  val) =>{
+        //              return smallest   next indes
+        return acc < val ? acc        : val;
+    //step1  arr[0]<arr[1] return acc if not retrun val  
+    });
+    console.log(output2);//1
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
