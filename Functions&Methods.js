@@ -54,7 +54,7 @@ let countVow = (str) => {
     console.log(count);
 }
 countVow("Hello world!");
-
+//-------------------------------------- Methods ----------------------------------------
 // For each Loop
     //arr.forEach(callback function)
     // Higher order function take function parameter or return function
@@ -75,3 +75,10 @@ arr.forEach((value, idx, arr) =>{//Three parameters can be passed for each itera
     console.log(value.toUpperCase(),idx,arr);
 });
 
+/*
+Let's Practice
+Qs. For given array of numbers , print the square of each value using forEach Loop
+*/
+let Array = [1,2,3,4,5,6,7,8];
+
+Array.forEach((value)=>{console.log(value +" Square Value is "+ value*value);});
